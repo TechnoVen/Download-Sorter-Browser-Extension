@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Sorter Settings</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📂 Download Sorter Settings</h1>
+
+    <section id="logging">
+      <label>
+        <input type="checkbox" id="loggingToggle" />
+        Enable Developer Logging
+      </label>
+    </section>
+
+    <section id="rules">
+      <h2>File Sorting Rules</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>MIME Type</th>
+            <th>Category</th>
+            <th>Subtype</th>
+            <th>Extensions</th>
+            <th>Enabled</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="rulesTableBody">
+          <!-- Injected by options.js -->
+        </tbody>
+      </table>
+
+      <button id="addRuleBtn">➕ Add New Rule</button>
+      <button id="resetDefaultsBtn" class="danger">♻️ Reset to Default</button>
+    </section>
+
+    <section id="newRuleFormSection" class="hidden">
+      <h2>Add / Edit Rule</h2>
+      <form id="ruleForm">
+        <label>
+          MIME Type:
+          <input type="text" id="mimeTypeInput" required />
+        </label>
+        <label>
+          Category Folder:
+          <input type="text" id="categoryInput" required />
+        </label>
+        <label>
+          Subtype Folder:
+          <input type="text" id="subtypeInput" required />
+        </label>
+        <label>
+          Extensions (comma-separated):
+          <input type="text" id="extensionsInput" required />
+        </label>
+        <label>
+          Enabled:
+          <input type="checkbox" id="enabledInput" checked />
+        </label>
+        <div class="form-actions">
+          <button type="submit">💾 Save Rule</button>
+          <button type="button" id="cancelEditBtn">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --border: #ccc;
+  --accent: #007bff;
+  --danger: #d9534f;
+  --tag-bg: #eee;
+  --tag-text: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1e1e;
+    --text: #f0f0f0;
+    --border: #444;
+    --accent: #66b0ff;
+    --danger: #ff4d4d;
+    --tag-bg: #333;
+    --tag-text: #ccc;
+  }
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem;
+  text-align: left;
+}
+
+th {
+  background-color: var(--tag-bg);
+}
+
+td input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+button {
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.4rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+button.danger {
+  background-color: var(--danger);
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.form-actions {
+  margin-top: 1rem;
+}
+
+#ruleForm {
+  background: var(--tag-bg);
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  margin-left: 0.4rem;
+}
+
+tr.collapsed td {
+  opacity: 0.4;
+  font-style: italic;
+  pointer-events: none;
+}
+
+#rulesTableBody.collapsed tbody tr:nth-child(n+51) {
+  display: none;
+}
+
+#expandRulesBtn {
+  margin-top: 1rem;
+  display: inline-block;
+}
+#expandRulesBtn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#expandRulesBtn:active {
+  color: var(--accent);
+}
+#expandRulesBtn:disabled {
+  color: #999;
+  cursor: not-allowed;
+}
