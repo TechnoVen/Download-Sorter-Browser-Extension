@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Build artifacts
+dist/
+exports/
+logs/
+
+# OS files
+.DS_Store
+
+# dotenv configs
+.env
+.env.*
+!.env.example
+
+# VS Code settings
+.vscode/
+
+# Lock files (optional)
+package-lock.json

@@ -1,0 +1,140 @@
+{
+  "image/jpeg": {
+    "category": "Images",
+    "subtype": "JPEG",
+    "extensions": [".jpg", ".jpeg"],
+    "source": "default"
+  },
+  "image/png": {
+    "category": "Images",
+    "subtype": "PNG",
+    "extensions": [".png"],
+    "source": "default"
+  },
+  "image/gif": {
+    "category": "Images",
+    "subtype": "GIF",
+    "extensions": [".gif"],
+    "source": "default"
+  },
+  "image/svg+xml": {
+    "category": "Images",
+    "subtype": "SVG",
+    "extensions": [".svg"],
+    "source": "default"
+  },
+  "image/webp": {
+    "category": "Images",
+    "subtype": "WEBP",
+    "extensions": [".webp"],
+    "source": "default"
+  },
+  "video/mp4": {
+    "category": "Videos",
+    "subtype": "MP4",
+    "extensions": [".mp4"],
+    "source": "default"
+  },
+  "video/webm": {
+    "category": "Videos",
+    "subtype": "WEBM",
+    "extensions": [".webm"],
+    "source": "default"
+  },
+  "audio/mpeg": {
+    "category": "Audio",
+    "subtype": "MP3",
+    "extensions": [".mp3"],
+    "source": "default"
+  },
+  "application/pdf": {
+    "category": "Documents",
+    "subtype": "PDF",
+    "extensions": [".pdf"],
+    "source": "default"
+  },
+  "application/epub+zip": {
+    "category": "Documents",
+    "subtype": "EPUB",
+    "extensions": [".epub"],
+    "source": "default"
+  },
+  "application/msword": {
+    "category": "Documents",
+    "subtype": "Word",
+    "extensions": [".doc"],
+    "source": "default"
+  },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document": {
+    "category": "Documents",
+    "subtype": "Word",
+    "extensions": [".docx"],
+    "source": "default"
+  },
+  "text/plain": {
+    "category": "Documents",
+    "subtype": "Text",
+    "extensions": [".txt"],
+    "source": "default"
+  },
+  "application/vnd.ms-excel": {
+    "category": "Documents",
+    "subtype": "Excel",
+    "extensions": [".xls"],
+    "source": "default"
+  },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": {
+    "category": "Documents",
+    "subtype": "Excel",
+    "extensions": [".xlsx"],
+    "source": "default"
+  },
+  "text/csv": {
+    "category": "Documents",
+    "subtype": "CSV",
+    "extensions": [".csv"],
+    "source": "default"
+  },
+  "application/vnd.ms-powerpoint": {
+    "category": "Documents",
+    "subtype": "PowerPoint",
+    "extensions": [".ppt"],
+    "source": "default"
+  },
+  "application/vnd.openxmlformats-officedocument.presentationml.presentation": {
+    "category": "Documents",
+    "subtype": "PowerPoint",
+    "extensions": [".pptx"],
+    "source": "default"
+  },
+  "application/json": {
+    "category": "Code",
+    "subtype": "JSON",
+    "extensions": [".json"],
+    "source": "default"
+  },
+  "application/javascript": {
+    "category": "Code",
+    "subtype": "JavaScript",
+    "extensions": [".js"],
+    "source": "default"
+  },
+  "application/xml": {
+    "category": "Code",
+    "subtype": "XML",
+    "extensions": [".xml"],
+    "source": "default"
+  },
+  "application/zip": {
+    "category": "Archives",
+    "subtype": "ZIP",
+    "extensions": [".zip"],
+    "source": "default"
+  },
+  "application/x-rar-compressed": {
+    "category": "Archives",
+    "subtype": "RAR",
+    "extensions": [".rar"],
+    "source": "default"
+  }
+}

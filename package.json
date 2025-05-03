@@ -1,0 +1,38 @@
+{
+  "name": "download-sorter-extension",
+  "version": "1.0.1",
+  "description": "Chrome/Brave/Edge extension to auto-sort downloads by file type, subtype, and extension.",
+  "main": "background.js",
+  "author": "Ahmed Nadir",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "downloads",
+    "sorting",
+    "productivity",
+    "file-manager"
+  ],
+  "scripts": {
+    "dev": "node scripts/watch-extension.js",
+    "build:zip": "npm run validate-env && node scripts/build-zip.js",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "bump": "npm version patch && changelog && git push --follow-tags",
+    "export:rules": "npm run validate-env && node scripts/export-rules.js",
+    "import:rules": "npm run validate-env && node scripts/import-rules.js",
+    "factory-reset": "npm run validate-env && node scripts/factory-reset.js",
+    "validate-env": "node scripts/validate-env.js",
+    "cli": "node scripts/cli.js",
+    "prepublishOnly": "npm run lint && npm run format && npm run build:zip"
+  },
+  "devDependencies": {
+    "archiver": "^5.3.1",
+    "chalk": "^5.3.0",
+    "changelog": "^1.0.5",
+    "chokidar": "^3.5.3",
+    "dotenv": "^16.3.1",
+    "eslint": "^9.26.0",
+    "minimist": "^1.2.8",
+    "prettier": "^3.5.3"
+  }
+}

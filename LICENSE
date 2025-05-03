@@ -1,0 +1,9 @@
+
+---
+
+### ✅ Step 4: Commit & Push Everything
+
+```bash
+git add .gitignore LICENSE README.md
+git commit -m "Add base repo files: README, LICENSE, .gitignore"
+git push
