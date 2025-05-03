@@ -1,0 +1,35 @@
+name: Build Extension ZIP
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 📦 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 🧩 Install dependencies
+        run: npm install
+
+      - name: 🧪 Lint
+        run: npm run lint
+
+      - name: 🧼 Format
+        run: npm run format
+
+      - name: 🧳 Build ZIP
+        run: npm run build:zip
+
+      - name: 📤 Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: extension-zip
+          path: dist/*.zip
