@@ -1,0 +1,38 @@
+{
+    "name": "Download Sorter – Auto-Organize Downloads",
+    "short_name": "Download Sorter",
+    "version": "1.0.1",
+    "default_locale": "en",
+    "description": "Automatically sorts your downloads into folders by file type, extension, and custom rules. Works on Chrome, Edge, and Brave.",
+    "promotional_text": "Tidy up your downloads folder forever. Sort by images, docs, media and more – automatically!",
+    "category": "Productivity",
+    "features": [
+      "Manifest V3",
+      "Download Interception",
+      "Rule-Based Folder Sorting",
+      "Customizable Settings UI",
+      "MIME + Extension Detection",
+      "Import/Export CLI"
+    ],
+    "privacy_policy": "https://technoven.github.io/Download-Sorter-Browser-Extension/privacy",
+    "support_url": "https://github.com/TechnoVen/Download-Sorter-Browser-Extension/issues",
+    "homepage_url": "https://technoven.github.io/Download-Sorter-Browser-Extension/",
+    "icons": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "screenshots": [
+      {
+        "src": "screenshots/screenshot1.png",
+        "sizes": "1280x800",
+        "description": "Extension rule manager and settings UI"
+      },
+      {
+        "src": "screenshots/folder-preview.png",
+        "sizes": "1280x800",
+        "description": "Example of organized download folder structure"
+      }
+    ]
+  }
+  

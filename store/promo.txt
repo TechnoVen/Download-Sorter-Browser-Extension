@@ -1,0 +1,14 @@
+📁 Download Sorter — Automatically Organize Your Downloads
+
+Tired of a messy Downloads folder? Download Sorter intercepts your downloads and automatically moves them into folders based on file type, MIME type, or extension. Define your own rules or use our smart defaults.
+
+✅ Images → /Downloads/Images/JPEG  
+✅ PDFs → /Downloads/Documents/PDF  
+✅ Archives → /Downloads/Archives/ZIP  
+
+🔧 Edit, add, or disable rules  
+🧩 Syncs across browsers  
+🛠️ Built on Manifest V3 with a privacy-first approach
+
+—
+Built for productivity lovers, power users, and clean folder obsessives.
