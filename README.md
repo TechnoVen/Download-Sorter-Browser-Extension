@@ -17,3 +17,6 @@ git clone https://github.com/TechnoVen/Download-Sorter-Browser-Extension.git
 cd Download-Sorter-Browser-Extension
 npm install
 npm run dev
+
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/your-extension-id.svg?label=Chrome%20Web%20Store&style=flat-square)](https://chrome.google.com/webstore/detail/your-extension-id)
+

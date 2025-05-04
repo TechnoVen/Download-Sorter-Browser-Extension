@@ -2,24 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Download Sorter Settings</title>
   <link rel="stylesheet" href="options.css" />
+  <link rel="stylesheet" href="tooltip.css" />
 </head>
-<body>
-  <div class="container">
-    <h1>📂 Download Sorter Settings</h1>
+<body class="dwsorter light">
 
-    <section id="logging">
-      <label>
-        <input type="checkbox" id="loggingToggle" />
-        Enable Developer Logging
+  <header class="dwsorter-header">
+    <h1>📂 Download Sorter</h1>
+    <div class="right-controls">
+      <label class="switch-label" title="Toggle dark/light mode">
+        <span>🌗</span>
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch" />
+          <span class="slider round"></span>
+        </label>
       </label>
-    </section>
+    </div>
+  </header>
 
-    <section id="rules">
-      <h2>File Sorting Rules</h2>
-      <table>
+  <main class="dwsorter-main">
+    <div class="dwsorter-container">
+
+      <!-- Sorting Table -->
+      <table id="rulesTable" class="dwsorter-table">
         <thead>
           <tr>
             <th>MIME Type</th>
@@ -30,46 +37,47 @@
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody id="rulesTableBody">
-          <!-- Injected by options.js -->
-        </tbody>
+        <tbody id="rulesTableBody"></tbody>
       </table>
 
-      <button id="addRuleBtn">➕ Add New Rule</button>
-      <button id="resetDefaultsBtn" class="danger">♻️ Reset to Default</button>
-    </section>
+      <!-- Add Rule Form -->
+      <section id="newRuleFormSection" class="hidden">
+        <form id="ruleForm" class="form-grid">
+          <input id="mimeTypeInput" placeholder="MIME type (e.g. application/pdf)" required />
+          <input id="categoryInput" placeholder="Category (e.g. Documents)" required />
+          <input id="subtypeInput" placeholder="Subtype (e.g. PDF)" required />
+          <input id="extensionsInput" placeholder="Extensions (e.g. .pdf,.xpdf)" required />
+          <label><input type="checkbox" id="enabledInput" checked /> Enabled</label>
 
-    <section id="newRuleFormSection" class="hidden">
-      <h2>Add / Edit Rule</h2>
-      <form id="ruleForm">
-        <label>
-          MIME Type:
-          <input type="text" id="mimeTypeInput" required />
-        </label>
-        <label>
-          Category Folder:
-          <input type="text" id="categoryInput" required />
-        </label>
-        <label>
-          Subtype Folder:
-          <input type="text" id="subtypeInput" required />
-        </label>
-        <label>
-          Extensions (comma-separated):
-          <input type="text" id="extensionsInput" required />
-        </label>
-        <label>
-          Enabled:
-          <input type="checkbox" id="enabledInput" checked />
-        </label>
-        <div class="form-actions">
-          <button type="submit">💾 Save Rule</button>
-          <button type="button" id="cancelEditBtn">Cancel</button>
-        </div>
-      </form>
-    </section>
-  </div>
+          <div class="form-buttons">
+            <button type="submit" class="button primary">✅ Save</button>
+            <button type="button" id="cancelEditBtn" class="button">❌ Cancel</button>
+          </div>
+        </form>
+      </section>
 
-  <script src="options.js"></script>
+      <!-- Controls -->
+      <div class="dwsorter-control-row">
+        <button id="addRuleBtn" class="button primary">➕ Add Rule</button>
+        <button id="resetDefaultsBtn" class="button danger">♻️ Restore Defaults</button>
+        <label class="inline-toggle">
+          <input type="checkbox" id="toggleMimeView" checked />
+          Show Friendly MIME
+        </label>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="dwsorter-footer">
+    <p>
+      © 2025 Download Sorter • 
+      <a href="https://github.com/TechnoVen/Download-Sorter-Browser-Extension" target="_blank">GitHub</a> • 
+      Developed by <a href="https://ahmednadir.com" target="_blank"><strong>Ahmed Nadir</strong></a>
+    </p>
+  </footer>
+
+  <script type="module" src="options.js"></script>
 </body>
 </html>
